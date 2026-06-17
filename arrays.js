@@ -55,4 +55,4 @@ console.log(arr.indexOf("ali"));
 
 //searching the element in the array using "find" method and it takes a callback function as an argument which is executed for each element of the array and it returns the first element that satisfies the condition
 let result = arr.find(i=>i=="s");
-console.log(result);    \\dot
+console.log(result);  
