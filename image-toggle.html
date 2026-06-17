@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image tool</title>
+</head>
+<body>
+    <img id="bulb" src="bulboff.png" height="200px" width="200px"/> <br />
+    <button id="btn" onclick="toggle()">Turn ON</button>
+</body>
+<script>
+    let isOn = false;
+    function toggle(){
+        let bulb =document.querySelector("#bulb");
+        let btn = document.querySelector("#btn");
+        if(isOn){
+            bulb.src = "bulbon.png";
+            btn.innerText = "Turn ON";
+            isOn = false;
+        }
+        else
+        {
+            bulb.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+            btn.innerText = "Turn OFF";
+            isOn = true;
+        }
+    }
+    </script>
+</html>
